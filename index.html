@@ -14,13 +14,13 @@
     <style>
         #container {
 
-            
-            margin-top: 16px;
+
+            margin-top: 10rem;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
-            height: 150vh;
+            height: 130vh;
 
 
 
@@ -48,10 +48,12 @@
 
         .headbar {
             display: flex;
-            position: sticky;
+            position: fixed;
+            width: 100%;
             background-color: indigo;
             color: yellow;
             height: 12vh;
+            top: 0;
 
 
 
@@ -102,8 +104,8 @@
         #buttons .add,
         #buttons .remove {
 
-            
-            
+
+
             border-radius: 5px;
             color: beige;
             margin-bottom: 5px;
@@ -113,18 +115,18 @@
         .add {
 
             background-color: green;
-            border:none;
+            border: none;
             padding: 3px;
         }
 
         .remove {
 
             background-color: red;
-            border:none;
+            border: none;
             padding: 2px 4px;
         }
 
-        button:hover{
+        button:hover {
             background-color: indigo;
             color: yellow;
         }
@@ -137,13 +139,13 @@
 
         <nav>
             <div class="headbar">
-                <a href="#">Home</a>
+                <a href="#" id="home">Home</a>
                 <a href="#">Categories</a>
-                <a href="#">Latest Collections</a>
+                <a href="#" id="latestcoll">Latest Collections</a>
                 <h2>Movie Magic!!</h2>
                 <div class="sear">
                     <input type="textbox" placeholder="search" id="textsearch">
-                    <a><i class="fas fa-search "></i></a>
+                    <a><i class="fas fa-search " id="searchbtn"></i></a>
                     <a><i class="fa fa-shopping-cart"></i></a>
                 </div>
 
@@ -157,7 +159,7 @@
     <section>
 
         <div id="container">
-            <div class="list">
+            <div class="list" id="Hitman's Wife’s Bodyguard">
                 <img src="mv1.jpg" alt="movie1" />
                 <h3>Movie 1</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque iste reiciendis dignissimos. Quos
@@ -169,82 +171,82 @@
                 </div>
 
             </div>
-            <div class="list">
+            <div class="list" id="Dora and the Lost City of Gold">
                 <img src="mv2.jpg" alt="movie1" />
                 <h4>Movie 2</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque iste reiciendis dignissimos. Quos
                     officia repellendus explicabo in consectetur. Aut et voluptatum, aliquam facilis enim similique
                     quaerat ratione quasi rerum ad.</p>
-                    <div id="buttons">
-                        <button class="add">Add to cart</button>
-                        <button class="remove">Remove from cart</button>
-                    </div>
+                <div id="buttons">
+                    <button class="add">Add to cart</button>
+                    <button class="remove">Remove from cart</button>
+                </div>
             </div>
-            <div class="list">
+            <div class="list" id="Angry Birds Movie 2">
                 <img src="mv3.jpg" alt="movie1" />
                 <h4>Movie 3</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque iste reiciendis dignissimos. Quos
                     officia repellendus explicabo in consectetur. Aut et voluptatum, aliquam facilis enim similique
                     quaerat ratione quasi rerum ad.</p>
-                    <div id="buttons">
-                        <button class="add">Add to cart</button>
-                        <button class="remove">Remove from cart</button>
-                    </div>
+                <div id="buttons">
+                    <button class="add">Add to cart</button>
+                    <button class="remove">Remove from cart</button>
+                </div>
             </div>
-            <div class="list">
+            <div class="list" id="Minions">
                 <img src="mv4.jpg" alt="movie1" />
                 <h4>Movie 4</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque iste reiciendis dignissimos. Quos
                     officia repellendus explicabo in consectetur. Aut et voluptatum, aliquam facilis enim similique
                     quaerat ratione quasi rerum ad.</p>
-                    <div id="buttons">
-                        <button class="add">Add to cart</button>
-                        <button class="remove">Remove from cart</button>
-                    </div>
+                <div id="buttons">
+                    <button class="add">Add to cart</button>
+                    <button class="remove">Remove from cart</button>
+                </div>
             </div>
-            <div class="list">
+            <div class="list" id="In the Heights">
                 <img src="mv5.jpg" alt="movie1" />
                 <h4>Movie 5</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque iste reiciendis dignissimos. Quos
                     officia repellendus explicabo in consectetur. Aut et voluptatum, aliquam facilis enim similique
                     quaerat ratione quasi rerum ad.</p>
-                    <div id="buttons">
-                        <button class="add">Add to cart</button>
-                        <button class="remove">Remove from cart</button>
-                    </div>
+                <div id="buttons">
+                    <button class="add">Add to cart</button>
+                    <button class="remove">Remove from cart</button>
+                </div>
             </div>
-            <div class="list">
+            <div class="list" id="Cruella">
                 <img src="mv6.jpg" alt="movie1" />
                 <h4>Movie 6</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque iste reiciendis dignissimos. Quos
                     officia repellendus explicabo in consectetur. Aut et voluptatum, aliquam facilis enim similique
                     quaerat ratione quasi rerum ad.</p>
-                    <div id="buttons">
-                        <button class="add">Add to cart</button>
-                        <button class="remove">Remove from cart</button>
-                    </div>
+                <div id="buttons">
+                    <button class="add">Add to cart</button>
+                    <button class="remove">Remove from cart</button>
+                </div>
             </div>
-            <div class="list">
+            <div class="list" id="F9">
                 <img src="mv7.jpg" alt="movie1" />
                 <h4>Movie 7</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque iste reiciendis dignissimos. Quos
                     officia repellendus explicabo in consectetur. Aut et voluptatum, aliquam facilis enim similique
                     quaerat ratione quasi rerum ad.</p>
-                    <div id="buttons">
-                        <button class="add">Add to cart</button>
-                        <button class="remove">Remove from cart</button>
-                    </div>
+                <div id="buttons">
+                    <button class="add">Add to cart</button>
+                    <button class="remove">Remove from cart</button>
+                </div>
             </div>
-            <div class="list">
+            <div class="list" id="Peter Rabbit 2:">
                 <img src="mv8.jpg" alt="movie1" />
                 <h4>Movie 8</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque iste reiciendis dignissimos. Quos
                     officia repellendus explicabo in consectetur. Aut et voluptatum, aliquam facilis enim similique
                     quaerat ratione quasi rerum ad.</p>
-                    <div id="buttons">
-                        <button class="add">Add to cart</button>
-                        <button class="remove">Remove from cart</button>
-                    </div>
+                <div id="buttons">
+                    <button class="add">Add to cart</button>
+                    <button class="remove">Remove from cart</button>
+                </div>
             </div>
 
 
@@ -253,41 +255,125 @@
 
     <script>
 
+
+
         let item = document.getElementById("textsearch");
-        let list = ["Dora", "Minions", "AngryBirds"];
-        item.onkeyup = sugges;
-        function sugges() {
+        let item2 = document.getElementById("latestcoll");
+        let item3 = document.getElementById("home").addEventListener('click', disp);
+        
 
-            //console.log("called");
+        function disp(){
 
-            var val = item.value;
+            if (list.length > 0) {
+               var result1 = document.getElementsByClassName("list");
+
+               for (var i = 0; i < result1.length; i++) {
+
+                   if (!list.includes(result1[i].id)) {
+                        document.getElementById(result1[i].id).style.display = "none";
+                    }
+
+                    else {
+                        document.getElementById(result1[i].id).style.display = "block";
+
+                    }
+
+                }
+
+           }
+
+        }
+
+        let list = ["Hitman's Wife’s Bodyguard", "Dora and the Lost City of Gold", "Angry Birds Movie 2", "Minions", "In the Heights", "Cruella", "F9", "Peter Rabbit 2:", "Dora and the Lost City of Gold3"];
+        let list2 = ["Peter Rabbit 2:", "In the Heights", "Minions",];
+      
+        item.onkeypress = sugges;
+        item2.addEventListener("click", latecoll);
+
+        
+
+        function latecoll(e) {
+            
+           
+            if (list2.length > 0) {
+               var result1 = document.getElementsByClassName("list");
+
+               for (var i = 0; i < result1.length; i++) {
+
+                   if (!list2.includes(result1[i].id)) {
+                        document.getElementById(result1[i].id).style.display = "none";
+                    }
+
+                    else {
+                        document.getElementById(result1[i].id).style.display = "block";
+
+                    }
+
+                }
 
 
-            var res = list.filter((item1) =>
 
-                //   item1.includes(val) && 
-                item1.startsWith(val)
+           }
+
+
+        }
+
+
+
+
+        function sugges(e) {
+
+            // if (e.which == 13) {
+            //     alert('You pressed enter!');
+            // }
+
+
+
+            var val = item.value.toLowerCase();
+
+            // if(val==null){
+            //     disp();
+
+            // }
+
+
+            let  res = list.filter((item1) =>
+
+
+                item1.toLowerCase().startsWith(val)
 
             );
 
-
-            if (res) {
-
-                console.log("entered");
-
-                document.getElementById("container").style.display = "none";
+            //console.log(res);
+            if (res.length > 0) {
 
 
-                //var disp = document.getElementById("container");
+
+                var result = document.getElementsByClassName("list");
 
 
-                for (var i = 0; i < res.length; i++) {
+                for (var i = 0; i < result.length; i++) {
+
+
+                    if (!res.includes(result[i].id)) {
+                        document.getElementById(result[i].id).style.display = "none";
+
+                    }
+
+                    else {
+                        document.getElementById(result[i].id).style.display = "block";
+
+                    }
+
+
+
 
 
 
 
                 }
 
+                
 
 
             }
